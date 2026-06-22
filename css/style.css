@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(86, 82, 105);
+    padding: 20px;
+}
+.conteiner {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(red, green, blue, alpha);
+}
+h1 , h2 {
+    color: aqua;
+    margin-bottom: 20px;
+}
+.grupo-form {
+    margin-bottom: 15 px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: antiquewhite;
+}
+.input[type="text"],input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solidcolor;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.opções-combustuvel {
+    display: flex;
+    gap: 15px;
+    flex-wrap:wrap ;
+    margin-top: 5px;
+}
+button {
+    background-color: aqua;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: azure;
+}
+#listaVeiculos {
+    margin-top: 25px;
+    list-style: none;
+}
+#listaVeiculos li {
+    background-color: aliceblue;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border-left: 4px solid;
+}
+#listaVeiculos li strong {
+    color: aquamarine;
+}

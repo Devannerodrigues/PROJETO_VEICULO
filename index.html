@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Seguro e IPVA-Veiculos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+<h1>Cadastro de Veiculos</h1>
+<form id="formVeiculos"></form>
+
+<div class="grupo-form">
+    <label>Marca</label>
+    <input type="text"id= "Marca" required placeholder="Ex: Toyota ,Fiat">
+
+</div>
+<div class="grupo-form">
+    <label>Modelo</label>
+    <input type="text"id= "modelo" required placeholder="Ex: Corola ,Argo">
+    
+</div>
+<div class="grupo-form">
+    <label>Placa</label>
+    <input type="text"id= "Placa" required placeholder="Ex: ABCD,1234">
+</div>
+<div class="grupo-form">
+    <label>Ano de Fabrição</label>
+    <input type="number"id= "Ano" required min="1900" required max="2026">
+</div>
+<div class="grupo-form">
+    <label>Valor de Mercado</label>
+    <input type="number"id= "Ano" required min="0" required max="0.01">
+</div>
+<div class="grupo-form">
+    <label>Tipo combustível</label>
+   <div class="Opções de combustivel">
+    <label><input type="radio"name="combustivel"value="gasolina"required>Gasolina</label>
+<label><input type="radio"name="combustivel"value="etanol"required>Etanol</label>
+<label><input type="radio"name="combustivel"value="biocombustivel"required>Biocombustivell</label>
+<label><input type="radio"name="combustivel"value="hibrido"required>Hibrido</label>
+<label><input type="radio"name="combustivel"value="eletrico"required>Eletrico</label>
+</div>
+    <button type="submit">Adicionar Veiculos</button>
+    
+    </form>
+    <h2>Lista de Veiculos Cadastrados</h2>
+    
+    <ul id="lista de Veiculos"></ul>
+</div>
+<script src="js/script_Veiculo.js"></script>
+
+<script src="js/script_Calculo.js"></script>
+
+</body>
+</html>
